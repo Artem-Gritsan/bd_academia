@@ -9,6 +9,7 @@ class Organizations(models.Model):
     director = models.TextField()
     phone_number = models.TextField()
     org_structure = models.TextField()
+    org_id = models.IntegerField()
 
     class Meta:
         managed = False
