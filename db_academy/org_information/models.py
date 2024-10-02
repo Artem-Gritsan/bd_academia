@@ -24,6 +24,7 @@ class Organizations(models.Model):
     phone_number = models.CharField(max_length=50, null=True)
     org_structure = models.CharField(max_length=100)
     parent = models.ForeignKey('self', on_delete=models.DO_NOTHING, null=True)
+    activity_type = models.CharField(max_length=1000, null=True)
 
     class Meta:
         db_table = 'organizations_2'
